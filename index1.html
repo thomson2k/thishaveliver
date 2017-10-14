@@ -51,6 +51,7 @@
   .bg-1 {
       background: #2d2d30;
       color: #bdbdbd;
+      
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -273,7 +274,7 @@
   </div>
 </div>
 
-<!-- Container (TOUR Section) -->
+
 <div id="skis" class="bg-1">
   <div class="container">
     <h3 class="text-center">SKIS</h3>
@@ -297,7 +298,7 @@
 <!-- Contact  -->
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
- 
+   
 
   <div class="row">
     <div class="col-md-4">
@@ -305,10 +306,7 @@
      
       <p><span class="glyphicon glyphicon-envelope"></span>Email: w.t.tomaszdev@gmail.com</p>
     </div>
-    
-      
-      
-        </div>
+     </div>
       </div>
     
 
@@ -323,30 +321,26 @@
 
 <script>
 $(document).ready(function(){
-  
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-    /
-    if (this.hash !== "") {
+  
+  if (this.hash !== "") {
+
+    
+    event.preventDefault();
+
+    
+    var hash = this.hash;
+
+    
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
 
       
-      event.preventDefault();
-
-      
-      var hash = this.hash;
-
-      
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        
-        window.location.hash = hash;
+      window.location.hash = hash;
       });
-    } 
+    }  
   });
 })
 </script>
