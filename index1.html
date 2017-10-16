@@ -188,11 +188,12 @@
 </nav>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    <!-- the number of indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+    
     </ol>
 
     <!-- Wrapper for slides -->
@@ -318,33 +319,11 @@
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
   <p> Made By <a href="https://github.com/thomson2k" data-toggle="tooltip" title="Visit my GitHub">thomson2k</a></p> 
-</footer>
+</footer> 
 
-<script>
-$(document).ready(function(){
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+<!-- script -->
+ <script src="javascript.js"></script>
 
-  
-  if (this.hash !== "") {
-
-    
-    event.preventDefault();
-
-    
-    var hash = this.hash;
-
-    
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-
-      
-      window.location.hash = hash;
-      });
-    }  
-  });
-})
-</script>
 
 </body>
 </html>
