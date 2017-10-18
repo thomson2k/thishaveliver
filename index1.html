@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <title>This have Liver</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
 <style>
       body {
       font: 400 15px/1.8 Lato, sans-serif;
@@ -18,7 +18,7 @@
   }
   h3, h4 {
       margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
+      letter-spacing: 10px;
       font-size: 20px;
       color:#1197d6;  /* #111*/
   }
@@ -37,8 +37,8 @@
   }
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
-      filter: grayscale(20%); /*  black and white photo */ 
-      width: 100%; 
+      filter: grayscale(20%); /*  black and white photo */
+      width: 100%;
       margin: auto;
   }
   .carousel-caption h3 {
@@ -46,13 +46,12 @@
   }
   @media (max-width: 600px) {
     .carousel-caption {
-      display: none; 
+      display: none;
     }
   }
   .bg-1 {
-      background: #1197d6;   /* #2d2d30 color */           
-      color: #1197d6;    /* #bdbdbd color */   
-      
+      background: #1197d6;   /* #2d2d30 color */
+      color: #1197d6;    /* #bdbdbd color */
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -97,7 +96,6 @@
   .nav-tabs li a {
       color:  #1197d6; /*#777*/
   }
- 
   .navbar {
       font-family: Montserrat, sans-serif;
       margin-bottom: 0;
@@ -107,7 +105,7 @@
       letter-spacing: 4px;
       opacity: 0.9;
   }
-  .navbar li a, .navbar .navbar-brand { 
+  .navbar li a, .navbar .navbar-brand {
       color: #d5d5d5 !important;
   }
   .navbar-nav li a:hover {
@@ -141,12 +139,24 @@
   footer a:hover {
       color:#1197d6;/*  #777*/
       text-decoration: none;
-  }  
+  }
   .form-control {
       border-radius: 0;
   }
   textarea {
       resize: none;
+  }
+  .right {
+    float: right;
+  }
+  .left {
+    float: left;
+  }
+  .link-icon {
+    height: 40px;
+  }
+  .show-full {
+    overflow: hidden;
   }
   </style>
 </head>
@@ -158,11 +168,11 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#myPage">THOMSON2K</a>
     </div>
-   
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
@@ -175,7 +185,7 @@
           <ul class="dropdown-menu">
             <li><a href="#">more</a></li>
             <li><a href="#">more</a></li>
-            <li><a href="#">more</a></li> 
+            <li><a href="#">more</a></li>
           </ul>
         </li>
         <!--<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
@@ -190,7 +200,7 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-    
+
     </ol>
 
     <!-- Wrapper for slides -->
@@ -200,7 +210,7 @@
         <div class="carousel-caption">
           <h3>Welcome</h3>
           <p></p>  <!--- something in the future-->
-        </div>      
+        </div>
       </div>
 
       <div class="item">
@@ -208,15 +218,15 @@
         <div class="carousel-caption">
           <h3>Welcome</h3>
           <p></p> <!--- something in the future-->
-        </div>      
+        </div>
       </div>
-    
+
       <div class="item">
         <img src="images/mrrobot.jpg" alt="mrrobot" width="1200" height="700">
         <div class="carousel-caption">
           <h3>Welcome</h3>
           <p></p><!--- something in the future-->
-        </div>      
+        </div>
       </div>
     </div>
 
@@ -231,11 +241,9 @@
     </a>
 </div>
 
-<!----------------->
-
 <div id="about" class="container text-center">
   <h3>About</h3>
-  <p>Hello, my name is Tom and im learning javascipt. </p>
+  <p>Hello, my name is Tom and I'm learning javascipt. </p>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <p>Below you will find cool stuff </p>
   <div class="row">
@@ -245,9 +253,9 @@
         <img src="images/1.png" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo" class="collapse">
-        <p>For now my git is a bit empty </p> 
+        <p>For now my git is a bit empty </p>
         <p>I hope it will change</p>
-         <p>  <a href="https://github.com/thomson2k" data-toggle="tooltip" title="but if you want to see it ">GITHUB</a></p>
+        <p>  <a href="https://github.com/thomson2k" data-toggle="tooltip" title="but if you want to see it ">GITHUB</a></p>
       </div>
     </div>
     <div class="col-sm-4">
@@ -257,7 +265,7 @@
       </a>
       <div id="demo2" class="collapse">
         <p>My <a href="https://www.facebook.com/profile.php?id=100004822056297" data-toggle="tooltip" >Facebook</a></p>
-        
+
       </div>
     </div>
     <div class="col-sm-4">
@@ -272,58 +280,63 @@
   </div>
 </div>
 
-
 <div id="skis" class="bg-1">
   <div class="container">
     <h3 class="text-center">SKIS</h3>
     <p class="text-center">I really like skiing </p>
-    
+
   <div class="item">
         <img src="images/skiiaction.gif"  >
         <div class="carousel-caption">
-         
-          
-          
-        </div>      
-      </div>
-    </div>
-  <!-- SeCOND LAST    -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+
+
+
         </div>
       </div>
     </div>
-  
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog"></div>
+  </div>
+</div>
+
 <!-- Contact  -->
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
-   
+
 
   <div class="row">
     <div class="col-md-4">
-     
-     
       <p><span class="glyphicon glyphicon-envelope"></span>Email: w.t.tomaszdev@gmail.com</p>
     </div>
-     </div>
-      </div>
-    
-
+  </div>
+</div>
 
 <!-- Footer -->
-<footer class="text-center">
+<footer class="text-center show-full">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TAKE ME HOME">
     <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p align="left"> Made By <a href="https://github.com/thomson2k" data-toggle="tooltip" title="Visit my GitHub">thomson2k</a></p> 
-  <p align="right"><a href="https://plus.google.com/u/0/112977121858617018426" data-toggle="tooltip" title="Visit Google +"> <img src="images/google+.png" width="4%" height="3%"> </img> </p>
-  
-  <p align="right"> <a href="https://github.com/thomson2k" data-toggle="tooltip" title="Visit my GitHub"> <img src="images/github-icon.png" width="4%" height="3%"> </img> </p>
+  </a>
+  <br />
 
-</footer> 
+  <p class="left">
+    Made By
+    <a href="https://github.com/thomson2k" data-toggle="tooltip" title="Visit my GitHub">thomson2k</a>
+  </p>
+
+  <p class="right">
+    <a href="https://plus.google.com/u/0/112977121858617018426" data-toggle="tooltip" title="Visit Google +">
+      <img src="images/google+.png" class="link-icon" />
+    </a>
+
+    <a href="https://github.com/thomson2k" data-toggle="tooltip" title="Visit my GitHub">
+      <img src="images/github-icon.png" class="link-icon" />
+    </a>
+  </p>
+</footer>
 
 <!-- script -->
- <script src="javascript.js"></script>
- 
+<script src="javascript.js"></script>
+
 </body>
 </html>
